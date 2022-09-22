@@ -20,7 +20,7 @@ def nsp_parse(prompt):
     ptype = type(prompt)
 	
     if not os.path.exists('./nsp_pantry.json'):
-        wget('https://raw.githubusercontent.com/WASasquatch/noodle-soup-prompts/main/nsp_pantry.json', './nsp_pantry.json')
+        wget('https://raw.githubusercontent.com/TheFreeRadical/noodle-soup-prompts/main/nsp_pantry.json', './nsp_pantry.json')
 
     if nspterminology is None:
         with open('./nsp_pantry.json', 'r') as f:
